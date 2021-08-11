@@ -11,6 +11,15 @@ In this code, I've modeled a few kinds of connectivity matrices, each with speci
  - Binary matrices, where each element of the NxN matrix is drawn ~ Ber(0.5). This is a simple connectivity matrix. Its biological interpretation is that some neurons connect to each other and some don't in a way that seems random to us, but this is mostly as a sanity check.
  - Uniform matrices taking on real values between 0 and 1, "Unif(0,1)". It is also used as a point of comparison / sanity check.
  - Ternary matrices, with elements taking on values -1, 0, and 1 with equal probability. This is similar to a Hopfield network. Understanding the spectra of these matrices were a core part of this computer experiment.
+ 
+ others implemented for plot #3:
+ - uniform(-1,1)
+ - uniform discrete of [0,0.5,1,1.5,2,2.5,3]
+ - normal, mean 0, stdev 1
+ - normal, mean 0.2, stdev 1
+ - normal, mean -0.2, stdev 1
+ - two-humped normal, norm(.2)+norm(-.2)
+ 
 
  not yet implemented:
  - Uniform matrices taking on real values between -1 and 1, "Unif(-1,1)"
