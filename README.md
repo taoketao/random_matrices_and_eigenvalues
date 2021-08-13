@@ -29,6 +29,10 @@ In the code in script.py, I've modeled different kinds of connectivity matrices,
  - nearly orthonormal matrices 
  - partially orthogonal matrices
 
+ - 'eigenvalues' of a neural network layer, found via simulation and sampling
+   - MLP, RELU + Gaussian(0.01,1)/100.0, softmax + Uniform(0,N)/sqrt(N), RELU + np.random.randn(N) x sqrt(2./N) [He 2015 Delving]
+     See https://cs231n.github.io/neural-networks-2/#init on initializations
+
 For each type of matrix, I sampled many random instances, computed the eigenvalues, sorted them, and took the average (and stdev) over the instances. For plots made before 02:50 8.11, I used absolute value of eigenvalues, and after that, used singular values ie squared eigenvalues. See plots binary_ternary_uniform_01.png and ####XYZXYZ####. It's well known in dynamical systems theory that binary random matrices tend to have one large eigenvalue near unity and the remaining eigenvalues are about the same at value much less than one. The plots show as much: As the size of the square matrix increases, the binary matrix indeed seems to achieve one large eigenvaue and many smaller ones at a similar place. ((todo: are the remaining ones normally distributed?)). It also seems to be the case for Unif(0,1) matrices. But interestingly for ternary matrices, the eigenvalues degrade smoothly. This contrasts with the intuition we have about mode-learning of neural networks thanks to Saxe, Ganguli, and McClelland, 2013, "Exact Solutions...": we'd expect that networks would tend to learn one orthonormal eigenmode(?) at a time in correspondence with the only-one-large-eigenvalue.
 
 anyways, there's math behind all this, and these experiments are for intuition mostly. Enjoy the script!
