@@ -26,6 +26,7 @@ In the code in script.py, I've modeled different kinds of connectivity matrices,
  not yet implemented:
  - binary {-1,1} matrices
  - Hopfield network-like binary matrices, which are like binary random matrices except the diagonals are zero
+ - actual Hopfield net with all its properties, such as matrix symmetry
  - nearly orthonormal matrices 
  - partially orthogonal matrices
 
