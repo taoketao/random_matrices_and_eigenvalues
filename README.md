@@ -42,4 +42,4 @@ anyways, there's math behind all this, and these experiments are for intuition m
 Update 8.18: turning this script stuff into a reproducible jupyter notebook.
 
 
-, up to nonlinear activation functions
+Conclusive analysis so far: indeed, some of the distributions match the curvature of the Marchenko-Pastur distribution, as they should. Specifically, they are qualitatively similar to y=sqrt(4/x-1).
