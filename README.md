@@ -39,6 +39,7 @@ For each type of matrix, I sampled many random instances, computed the eigenvalu
 anyways, there's math behind all this, and these experiments are for intuition mostly. Enjoy the script!
 
 
+Update 8.18: turning this script stuff into a reproducible jupyter notebook.
 
 
 , up to nonlinear activation functions
